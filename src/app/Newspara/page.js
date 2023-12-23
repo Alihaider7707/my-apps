@@ -30,15 +30,15 @@ const Newspara = () => {
     newparashow(), [];
   });
 
-  const [Newspara2, setNewspara2] = useState([]);
+  const [Newsp, setNewsp] = useState([]);
 
-  const newparashow2 = async () => {
-    const data = await fetch("/api/newsparaapi2");
+  const newpshow = async () => {
+    const data = await fetch("/api/newspapi");
     const jsondata = await data.json();
-    setNewspara2(jsondata);
+    setNewsp(jsondata);
   };
   useEffect(() => {
-    newparashow2(), [];
+    newpshow(), [];
   });
 
   return (
@@ -97,7 +97,7 @@ const Newspara = () => {
 
       <div className="container">
         <div className="news-flex">
-          {Newspara2.map((items) => (
+          {Newsp.map((items) => (
             <div>
               <div key={items._id} className="newspara-text">
                 <h1> {items.Newsheading2} </h1> <p> {items.Newsdecription2} </p>
