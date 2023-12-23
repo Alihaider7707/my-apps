@@ -2,7 +2,9 @@ const { default: mongoose } = require("mongoose");
 
 const mymodel = new mongoose.Schema({
     Heading: String,
-    Message: String
+    Message: String,
+    Head: String,
+    Decription: String
 
 })
 

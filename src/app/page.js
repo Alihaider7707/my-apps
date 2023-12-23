@@ -18,7 +18,7 @@ const Home = () => {
   const [Boxdata, setBoxdata] = useState([]);
 
   const boxshow = async () => {
-    const data = await fetch("/api/box");
+    const data = await fetch("/api/appapi");
     const jsondata = await data.json();
     setBoxdata(jsondata);
   };
