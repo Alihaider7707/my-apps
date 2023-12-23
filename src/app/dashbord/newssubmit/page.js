@@ -31,7 +31,7 @@ const newssubmit = () => {
       ></textarea>
       <br />
       <br />
-      <a href="/newssubmit">
+      <a href="/dashbord/newssubmit">
         <button onClick={save}>save</button>
       </a>
     </div>

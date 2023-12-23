@@ -31,7 +31,7 @@ const boxsubmit = () => {
       ></textarea>
       <br />
       <br />
-      <a href="/boxsubmit">
+      <a href="/dashbord/boxsubmit">
         <button onClick={save}>save</button>
       </a>
     </div>

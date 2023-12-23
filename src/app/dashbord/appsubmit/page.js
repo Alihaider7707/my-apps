@@ -31,7 +31,7 @@ const appsubmit = () => {
       ></textarea>
       <br />
       <br />
-      <a href="/appsubmit">
+      <a href="/dashbord/appsubmit">
         <button onClick={save}>save</button>
       </a>
     </div>

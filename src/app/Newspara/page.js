@@ -19,12 +19,12 @@ const Newspara = () => {
     show(), [];
   });
 
-  const [Newspara1, setNewspara1] = useState([]);
+  const [Np, setNp] = useState([]);
 
   const newparashow = async () => {
-    const data = await fetch("/api/newsparaapi1");
+    const data = await fetch("/api/npapi");
     const jsondata = await data.json();
-    setNewspara1(jsondata);
+    setNp(jsondata);
   };
   useEffect(() => {
     newparashow(), [];
@@ -71,7 +71,7 @@ const Newspara = () => {
 
       <div className="container">
         <div className="news-flex">
-          {Newspara1.map((items) => (
+          {Np.map((items) => (
             <div>
               <div key={items._id} className="newspara-text">
                 <h1> {items.Newsheading1} </h1> <p> {items.Newsdecription1} </p>
@@ -121,57 +121,9 @@ const Newspara = () => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="news-flex">
-          {Newspara2.map((items) => (
-            <div>
-              <div key={items._id} className="newspara-text">
-                <h1> {items.Newsheading2} </h1> <p> {items.Newsdecription2} </p>
-              </div>
-            </div>
-          ))}
-          <div className="social-icons">
-            <Link href="#0" className="socialicon">
-              <FaShareAltSquare />
-            </Link>
-            <Link href="#0" className="socialicon">
-              <FaTwitterSquare />
-            </Link>
-            <Link href="#0" className="socialicon">
-              <FaFacebookSquare />
-            </Link>
-          </div>
-          <div>
-            <hr style={{ padding: "0" }} />
-          </div>
-        </div>
-      </div>
+     
 
-      <div className="container">
-        <div className="news-flex">
-          {Newspara2.map((items) => (
-            <div>
-              <div key={items._id} className="newspara-text">
-                <h1> {items.Newsheading2} </h1> <p> {items.Newsdecription2} </p>
-              </div>
-            </div>
-          ))}
-          <div className="social-icons">
-            <Link href="#0" className="socialicon">
-              <FaShareAltSquare />
-            </Link>
-            <Link href="#0" className="socialicon">
-              <FaTwitterSquare />
-            </Link>
-            <Link href="#0" className="socialicon">
-              <FaFacebookSquare />
-            </Link>
-          </div>
-          <div>
-            <hr style={{ padding: "0" }} />
-          </div>
-        </div>
-      </div>
+     
     </>
   );
 };
