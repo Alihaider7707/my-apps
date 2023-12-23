@@ -16,22 +16,21 @@ const appsubmit = () => {
   return (
     <div>
       <input
-        name="Heading"
-        type="text"
+        name='Heading'
+        type='text'
         onChange={(e) => setHeading(e.target.value)}
       />
       <br />
       <br />
       <textarea
-        name="Message"
-        id=""
-        cols="30"
-        rows="10"
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
+        name='Message'
+        id=''
+        cols='30 '
+        rows='10'
+        onChange={(e) => setMessage(e.target.value)}></textarea>
       <br />
       <br />
-      <a href="/dashbord/appsubmit">
+      <a href='/dashbord/appsubmit'>
         <button onClick={save}>save</button>
       </a>
     </div>
