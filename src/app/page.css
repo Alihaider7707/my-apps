@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBC Reith Qalam", "Times New Roman", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    padding-bottom: 8px;
+}
+
+html {
+    text-size-adjust: 100%;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+}
+
+img {
+    width: 100%;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: right;
+    width: 100%;
+}
+
+.row {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px; */
+    margin: 0 15px;
+}
+
+.news-max {
+    /* max-width: 50%;
+    flex: 1 1 50%; */
+    text-align: right;
+    float: right;
+    max-width: 50.88888%;
+    /* grid-area: span 4 / span 1; */
+}
+
+.news-text h3 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    color: rgb(20, 20, 20);
+}
+
+.news-text p {
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.news-img img {
+    /* width: 250px; */
+    height: 132px;
+}
+
+.news-max2 {
+    max-width: 22%;
+    /* flex: 1 1 26%; */
+    float: left;
+    text-align: right;
+    margin: 0 10px;
+}
+
+
+/* ----------------- Start Newspara-------------------- */
+
+.news-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.newspara-text h1 {
+    font-size: 2.5rem;
+    max-width: 57%;
+    text-align: right;
+    float: right;
+    font-weight: 600;
+}
+
+.newspara-text p {
+    max-width: 80%;
+    float: right;
+    text-align: right;
+}
+
+.social-icons {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap-reverse;
+}
+
+.socialicon:nth-of-type(1) {
+    color: #54AD54;
+}
+
+.socialicon:nth-of-type(2) {
+    color: #1DA1F2;
+}
+
+.socialicon:nth-of-type(3) {
+    color: #4267B2;
+}
+
+
+/* ----------------- End Newspara-------------------- */

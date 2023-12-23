@@ -1,0 +1,1 @@
+export const Dbconne = "mongodb+srv://alihd8330:12ka4421@cluster0.hphlrrk.mongodb.net/mydatabase?retryWrites=true&w=majority"
